@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><visualization creator="es" date="2026-07-01" description="Diagrama de caja" id="frame_graph_1" lang="es-PE" style="frame_graph_1s" type="200000" version="1.4" xmlns="http://xml.spss.com/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xml.spss.com/visualization http://xml.spss.com/visualization/vizml-2.9.xsd">
+	
+	<location method="fixed" part="left" value="0px"/>
+	<location method="fixed" part="right" value="625px"/>
+	<location method="fixed" part="top" value="0px"/>
+	<location method="fixed" part="bottom" value="500px"/>
+	<extension styleCycleRepository="styleCycleRepository"/>
+	<userSource id="source0"/>
+	<sourceVariable categorical="true" creator="external_datasource" id="variable4" key="false" shortLabel="Lenguaje" source="source0" sourceName="V4" weight="false">
+		<format>
+			<relabel from="1" id="relabel_1527" to="Python"/>
+			<relabel from="2" id="relabel_1528" to="Java"/>
+			<relabel from="3" id="relabel_1529" to="C++"/>
+		</format>
+	</sourceVariable>
+	<sourceVariable categorical="false" creator="external_datasource" id="variable5" key="false" label="Tiempo_Desarrollo_Min" shortLabel="Tiempo_Desarrollo_Min" source="source0" sourceName="V5" weight="false">
+		<format hiddenseparator="false" minimumFractionDigits="2" minimumIntegerDigits="0" useGrouping="false"/>
+	</sourceVariable>
+	<sourceVariable categorical="false" creator="external_system" description="labeling" id="variable6" key="false" label="Número de casos" source="source0" sourceName="$CASENUM" weight="false"/>
+	
+	<graph cellStyle="facetLabel_data_1s" id="frame_data_1" style="frame_data_1s">
+		<location method="fixed" part="left" value="1%"/>
+		<location method="fixed" part="top" value="1%"/>
+		<location method="fixed" part="bottom" value="99%"/>
+		<location method="fixed" part="right" value="99%"/>
+		<coordinates id="coordinates_1562">
+			<dimension id="dimension_1563" lowerMargin="5%" upperMargin="5%">
+				<axis combineAxisLabels="true" id="axis_axisx_1" repeat="never" style="axis_axisx_1s">
+					<label id="label_axisx_1" style="style_1569" textFrameStyle="style_1567"><text id="text_1566">Lenguaje</text></label>
+					<majorTicks id="majorTicks_1571" markStyle="majorTicks_axis_axisx_1markStyle" stagger="false" style="style_1574" tickFrameStyle="style_1572"/>
+				</axis>
+			</dimension>
+			<dimension id="dimension_1576" lowerMargin="5%" upperMargin="5%">
+				<axis combineAxisLabels="true" id="axis_axisy_1" repeat="never" style="axis_axisy_1s">
+					<label id="label_axisy_1" style="style_1582" textFrameStyle="style_1580"><text id="text_1579">Tiempo_Desarrollo_Min</text></label>
+					<majorTicks id="majorTicks_1584" markStyle="majorTicks_axis_axisy_1markStyle" stagger="false" style="style_1587" tickFrameStyle="style_1585"/>
+				</axis>
+			</dimension>
+		</coordinates>
+		<facetLayout id="facetLayout_1589" topDown="true"/>
+		<schema dot="false" extremeStyle="element_tukeyExtremes_1s" fenceStyle="style1" hingeStyle="element_tukeyHinges_1s" id="elementGroup_boxplot_1" medianStyle="element_median_1s" name="elementGroup_boxplot_1" outlierStyle="element_tukeyOutliers_1s" showCollidingLabels="false" style="elementGroup_boxplot_1s">
+			<tukeyStatistic id="tukeyStatistic_1596"/>
+			<labeling connectingLines="false" id="labeling_1591" style="style_1592" textFrameStyle="style_1594" variable="variable6"/>
+			<x variable="variable4"/>
+			<y variable="variable5"/>
+		</schema>
+	</graph>
+	
+	<style font-family="SansSerif" font-size="8pt;6pt;" id="c-o-n-t-a-i-n-er" pattern="0" stroke-linecap="butt" text-fit="true">
+		<style color="white" color2="transparent" id="frame_graph_1s"/>
+		<style color="transparent" color2="transparent" id="frame_data_1s"/>
+		<style color="#F0F0F0" color2="black" id="facetLabel_data_1s"/>
+		<style color="black" id="axis_axisx_1s" stroke-width="0.5pt"/>
+		<style id="axis_axisx_1baselineStyle"/>
+		<style color="black" id="majorTicks_axis_axisx_1markStyle" stroke-width="1pt"/>
+		<style id="majorTicks_axis_axisx_1tickLabelStyle"/>
+		<style color="black" id="axis_axisy_1s" stroke-width="0.5pt"/>
+		<style id="axis_axisy_1baselineStyle"/>
+		<style color="black" id="majorTicks_axis_axisy_1markStyle" stroke-width="1pt"/>
+		<style id="majorTicks_axis_axisy_1tickLabelStyle"/>
+		<style color="#D3CE97" depth="75%" id="elementGroup_boxplot_1s" pattern="0" size="25%"/>
+		<style id="element_tukeyInnerFence_1s"/>
+		<style color="#D3CE97" color2="black" depth="75%" id="element_tukeyHinges_1s"/>
+		<style color="black" depth="75%" id="element_median_1s" stroke-linecap="butt" stroke-width="1.5pt"/>
+		<style color="transparent" color2="black" id="element_tukeyOutliers_1s" size="5pt" symbol="circle"/>
+		<style id="labeling_1s"/>
+		<style color="black" color2="black" id="element_tukeyExtremes_1s" size="5pt" symbol="flower"/>
+		<style id="labeling_s"/>
+		<style id="label_axisy_1s"/>
+		<style id="label_axisx_1s"/>
+		<style id="style_1567" visible="false"/>
+		<style color="black" color2="transparent" font-size="11pt;7pt" font-weight="bold" id="style_1569" margin="6px" padding="1px"/>
+		<style id="style_1572" visible="false"/>
+		<style color="black" font-size="8pt;6pt;" id="style_1574"/>
+		<style id="style_1580" visible="false"/>
+		<style color="black" color2="transparent" font-size="11pt;7pt" font-weight="bold" id="style_1582" margin="6px" padding="1px"/>
+		<style id="style_1585" visible="false"/>
+		<style color="black" font-size="8pt;6pt;" id="style_1587"/>
+		<style color="black" color2="transparent" font-size="8pt;6pt;" font-weight="regular" id="style_1592" margin="1px" padding="1px" stroke-width="0.5pt"/>
+		<style color="transparent" color2="transparent" id="style_1594"/>
+		<style color="#D3CE97" color2="black" depth="75%" id="style1" stroke-width="0.75pt" symbol="ibeam"/>
+	</style>
+	
+	<styleCycle id="styleCycleDefault">
+		<cycle id="cycle_1555">
+			<style id="style_styleCycleDefault" labelInside="preferred"/>
+		</cycle>
+	</styleCycle>
+	<styleCycle id="styleCycleRepository">
+		<cycle>
+			<style color="#3E58AC"/>
+			<style color="#2EB848"/>
+			<style color="#D3CE97"/>
+			<style color="#7C287D"/>
+			<style color="#FBF873"/>
+			<style color="#EF3338"/>
+			<style color="#48C2C5"/>
+			<style color="#CCCCCC"/>
+			<style color="#7AAAD5"/>
+			<style color="#0A562C"/>
+			<style color="#F8981D"/>
+			<style color="#DDBAF1"/>
+			<style color="#1A5F76"/>
+			<style color="#CCFFCC"/>
+			<style color="#BB3F7F"/>
+			<style color="#999999"/>
+			<style color="#000000"/>
+			<style color="#B6E7E8"/>
+			<style color="#FFFFFF"/>
+			<style color="#797AA7"/>
+			<style color="#70DC84"/>
+			<style color="#333333"/>
+			<style color="#ACD0EE"/>
+			<style color="#A21619"/>
+			<style color="#5D61FF"/>
+			<style color="#E4E4E4"/>
+			<style color="#248BAC"/>
+			<style color="#B89BC9"/>
+			<style color="#666666"/>
+			<style color="#0D8D46"/>
+		</cycle>
+		<cycle>
+			<style pattern="0"/>
+			<style pattern="26"/>
+			<style pattern="1"/>
+			<style pattern="12"/>
+			<style pattern="3"/>
+			<style pattern="29"/>
+			<style pattern="6"/>
+			<style pattern="14"/>
+			<style pattern="7"/>
+			<style pattern="18"/>
+			<style pattern="17"/>
+			<style pattern="22"/>
+			<style pattern="9"/>
+			<style pattern="20"/>
+			<style pattern="10"/>
+			<style pattern="21"/>
+			<style pattern="27"/>
+			<style pattern="19"/>
+			<style pattern="23"/>
+			<style pattern="13"/>
+			<style pattern="4"/>
+			<style pattern="25"/>
+			<style pattern="28"/>
+			<style pattern="5"/>
+			<style pattern="15"/>
+			<style pattern="2"/>
+			<style pattern="24"/>
+			<style pattern="11"/>
+			<style pattern="16"/>
+			<style pattern="8"/>
+		</cycle>
+		<cycle>
+			<style size="5pt" symbol="circle"/>
+			<style size="5pt" symbol="square"/>
+			<style size="5pt" symbol="cross"/>
+			<style glyph-sides="3" size="5pt" symbol="polygon"/>
+			<style size="5pt" symbol="plus"/>
+			<style glyph-angle="90" glyph-aspect="0.5" size="5pt" symbol="circle"/>
+			<style glyph-angle="45" size="5pt" symbol="square"/>
+			<style glyph-sides="5" size="5pt" symbol="flower"/>
+			<style size="5pt" symbol="bowtie"/>
+			<style glyph-angle="90" glyph-aspect="0.5" size="5pt" symbol="square"/>
+			<style glyph-angle="180" glyph-sides="3" size="5pt" symbol="polygon"/>
+			<style glyph-aspect="0.5" size="5pt" symbol="circle"/>
+			<style glyph-sides="5" size="5pt" symbol="polygon"/>
+			<style glyph-sides="8" size="5pt" symbol="star"/>
+			<style glyph-aspect="0.5" size="5pt" symbol="square"/>
+			<style glyph-sides="3" size="5pt" symbol="flower"/>
+			<style glyph-angle="90" size="5pt" symbol="bowtie"/>
+			<style glyph-angle="90" size="5pt" symbol="line"/>
+			<style glyph-angle="90" glyph-aspect="0.5" glyph-sides="4" size="5pt" symbol="polygon"/>
+			<style size="5pt" symbol="line"/>
+			<style glyph-angle="270" glyph-sides="3" size="5pt" symbol="polygon"/>
+			<style size="5pt" symbol="arrow"/>
+			<style glyph-angle="90" glyph-sides="3" size="5pt" symbol="polygon"/>
+		</cycle>
+		<cycle>
+			<style/>
+			<style stroke-dasharray="12pt,2pt,2pt,10pt,2pt,2pt"/>
+			<style stroke-dasharray="8pt,8pt"/>
+			<style stroke-dasharray="10pt,2pt,2pt,2pt"/>
+			<style stroke-dasharray="3pt,6pt"/>
+			<style stroke-dasharray="12pt,2pt,2pt,2pt,2pt,2pt,2pt,2pt"/>
+			<style stroke-dasharray="6pt,3pt,6pt"/>
+			<style stroke-dasharray="8pt,1pt,8pt,7pt,2pt,7pt"/>
+			<style stroke-dasharray="6pt,2pt,3pt,5pt,2pt,2pt"/>
+			<style stroke-dasharray="15pt,2pt,6pt,2pt"/>
+			<style stroke-dasharray="5pt,5pt"/>
+			<style stroke-dasharray="8pt,2pt,4pt,2pt"/>
+			<style stroke-dasharray="3pt,2pt"/>
+			<style stroke-dasharray="12pt,5pt,3pt,5pt"/>
+			<style stroke-dasharray="6pt,3pt,3pt,3pt"/>
+			<style stroke-dasharray="12pt,3pt"/>
+		</cycle>
+	</styleCycle>
+</visualization>
